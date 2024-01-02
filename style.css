@@ -102,5 +102,6 @@ header {
 
     .large-logo {
         display: block;
+        margin-bottom: -55px;
     }
 }
