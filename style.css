@@ -3,6 +3,7 @@
 body{
     margin: 0;
     font-family: 'Hind Siliguri', sans-serif;
+    background-color: #D8D8D4;
 }
 
 /* Header */
@@ -61,7 +62,7 @@ header {
     transition: 0.2s;
 }
 
-.menu a:hover {
+.menu a.nav-link:hover {
     background-color: #3b5356;
 }
 
@@ -79,6 +80,12 @@ header {
     .nav-bar {
         padding: 0.5rem 2rem;
     }
+
+    .nav-link {
+        flex: 1 1 0px;
+        width: 55px;
+        text-align: center;
+    }
     
     .menu {
         display: flex;
@@ -90,6 +97,7 @@ header {
         width: auto;
         margin: 0;
         padding: 0;
+        gap: 4rem;
     }
 
     .menu-btn {
@@ -104,4 +112,16 @@ header {
         display: block;
         margin-bottom: -55px;
     }
+}
+
+/* Skills Section */
+
+.skills {
+    background-color: #D8D8D4;
+    color: #334345;
+}
+
+.title {
+    margin-top: 3rem;
+    text-align: center;
 }
