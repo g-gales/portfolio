@@ -51,6 +51,7 @@ header {
 
 .menu.open{
     display: flex;
+    left: 0px;
 }
 
 .menu a {
