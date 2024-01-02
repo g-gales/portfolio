@@ -4,9 +4,11 @@ body{
     margin: 0;
 }
 
+/* Header */
+
 .logo {
-max-height: 10rem;
-margin-top: 1rem;
+    max-height: 10rem;
+    margin-top: 1rem;
 }
 
 header {
@@ -14,12 +16,45 @@ header {
 }
 
 .nav-bar {
-display: flex;
-justify-content: start;
-padding: 0;
-margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D8D8D4;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-link {
+.menu-btn {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.menu {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: -250px; 
+    background-color: #333;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background-color: #555;
 }
