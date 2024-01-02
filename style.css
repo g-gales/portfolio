@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #D8D8D4;
-    padding: 0;
+    padding: 10rem;
     margin: 0;
 }
 
@@ -57,4 +57,27 @@ header {
 
 .menu a:hover {
     background-color: #555;
+}
+
+.circular-logo {
+    display: none;
+}
+
+/* Queries For Nav */
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        display: flex;
+        position: relative;
+        left: 0;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .circular-logo {
+        display: block;
+        order: 2; /*puts logo in the center of menu items*/
+    }
 }
