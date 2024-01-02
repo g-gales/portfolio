@@ -20,7 +20,7 @@ header {
     justify-content: space-around;
     align-items: center;
     color: #D8D8D4;
-    padding: 2rem;
+    padding: 0 2rem;
     margin: 0;
 }
 
@@ -37,14 +37,14 @@ header {
 }
 
 .menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 1rem;
     left: -250px; 
     background-color: #333;
     padding: 15px;
-    width: 100px;
+    width: 125px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     align-items: center;
 }
@@ -55,17 +55,21 @@ header {
 }
 
 .menu a {
-    color: white;
+    color: #D8D8D4;
     text-decoration: none;
     padding: 10px;
     transition: 0.2s;
 }
 
 .menu a:hover {
-    background-color: #555;
+    background-color: #3b5356;
 }
 
-.circular-logo {
+.logo {
+    max-height: 10rem;
+}
+
+.large-logo {
     display: none;
 }
 
@@ -74,15 +78,22 @@ header {
 @media only screen and (min-width: 768px) {
     .menu {
         display: flex;
+        flex-direction: row;
+        background-color: #334345;
         position: relative;
         left: 0;
+        box-shadow: none;
     }
 
     .menu-btn {
         display: none;
     }
 
-    .circular-logo {
+    .small-logo {
+        display: none;
+    }
+
+    .large-logo {
         display: block;
         order: 2; /*puts logo in the center of menu items*/
     }
