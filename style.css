@@ -2,14 +2,10 @@
 
 body{
     margin: 0;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 /* Header */
-
-.logo {
-    max-height: 10rem;
-    margin-top: 1rem;
-}
 
 header {
     background-color: #334345;
@@ -20,7 +16,7 @@ header {
     justify-content: space-around;
     align-items: center;
     color: #D8D8D4;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     margin: 0;
 }
 
@@ -40,13 +36,13 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 1rem;
     left: -250px; 
     background-color: #333;
     padding: 15px;
     width: 125px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     align-items: center;
+    transition: left 0.4s ease;
 }
 
 .menu.open{
@@ -80,9 +76,10 @@ header {
         display: flex;
         flex-direction: row;
         background-color: #334345;
-        position: relative;
+        position: static;
         left: 0;
         box-shadow: none;
+        width: auto;
     }
 
     .menu-btn {
