@@ -42,7 +42,7 @@ header {
     position: absolute;
     left: -250px; 
     background-color: #333;
-    padding: 15px;
+    padding: 1rem;
     width: 125px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     align-items: center;
@@ -76,6 +76,10 @@ header {
 /* Queries For Nav */
 
 @media only screen and (min-width: 768px) {
+    .nav-bar {
+        padding: 0.5rem 2rem;
+    }
+    
     .menu {
         display: flex;
         flex-direction: row;
@@ -84,6 +88,8 @@ header {
         left: 0;
         box-shadow: none;
         width: auto;
+        margin: 0;
+        padding: 0;
     }
 
     .menu-btn {
@@ -96,6 +102,5 @@ header {
 
     .large-logo {
         display: block;
-        order: 2; /*puts logo in the center of menu items*/
     }
 }
