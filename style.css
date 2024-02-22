@@ -1,153 +1,169 @@
 /* Base Doc */
 
-body{
-    margin: 0;
-    font-family: 'Hind Siliguri', sans-serif;
-    background-color: #D8D8D4;
+body {
+  margin: 0;
+  font-family: "Hind Siliguri", sans-serif;
+  background-color: #d8d8d4;
 }
 
 /* Header */
 
 header {
-    background-color: #334345;
+  background-color: #334345;
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: #D8D8D4;
-    padding: 3rem 2rem;
-    margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #d8d8d4;
+  padding: 3rem 2rem;
+  margin: 0;
 }
 
 .menu-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.menu-btn:active .bar{
-    background-color: #afafac;
+.menu-btn:active .bar {
+  background-color: #afafac;
 }
 
 .bar {
-    width: 35px;
-    height: 6px;
-    background-color: #D8D8D4;
-    margin: 9px 0;
-    transition: 0.4s;
+  width: 35px;
+  height: 6px;
+  background-color: #d8d8d4;
+  margin: 9px 0;
+  transition: 0.4s;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: -250px; 
-    background-color: #333;
-    padding: 1rem;
-    width: 125px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    transition: left 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -250px;
+  background-color: #333;
+  padding: 1rem;
+  width: 125px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  transition: left 0.5s ease;
 }
 
-.menu.open{
-    display: flex;
-    left: 0px;
+.menu.open {
+  display: flex;
+  left: 0px;
 }
 
 .nav-link {
-    color: #D8D8D4;
-    text-decoration: none;
-    padding: 10px;
-    transition: 0.2s;
-    width: 7rem;
-    text-align: center;
-    border-radius: 10px;
-    text-transform: uppercase;
+  color: #d8d8d4;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.2s;
+  width: 7rem;
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 
 .nav-link:hover {
-    background-color: #3b5356;
+  background-color: #3b5356;
 }
 
 .logo {
-    max-height: 10rem;
+  max-height: 10rem;
 }
 
 .large-logo {
-    display: none;
+  display: none;
 }
 
 /* Queries For Nav */
 
 @media only screen and (min-width: 768px) {
-    .nav-bar {
-        padding: 0.5rem 2rem;
-    }
+  .nav-bar {
+    padding: 0.5rem 2rem;
+  }
 
-    .nav-link, .large-logo{
-        flex: 1 1 0px;
-        text-align: center;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: row;
-        background-color: #334345;
-        position: static;
-        left: 0;
-        box-shadow: none;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        gap: 1rem;
-        justify-content: space-between;
-    }
+  .nav-link,
+  .large-logo {
+    flex: 1 1 0px;
+    text-align: center;
+  }
 
-    .nav-link {
-        font-size: 1.1rem;
-    }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #334345;
+    position: static;
+    left: 0;
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    justify-content: space-between;
+  }
 
-    .menu a img {
-        margin: auto;
-    }
+  .nav-link {
+    font-size: 1.1rem;
+  }
 
-    .menu a:has(img) {
-        padding: 0;
-    }
-    .menu-btn {
-        display: none;
-    }
+  .menu a img {
+    margin: auto;
+  }
 
-    .small-logo {
-        display: none;
-    }
+  .menu a:has(img) {
+    padding: 0;
+  }
+  .menu-btn {
+    display: none;
+  }
 
-    .large-logo {
-        display: inline-flex;
-        margin-bottom: -55px;
-    }
+  .small-logo {
+    display: none;
+  }
+
+  .large-logo {
+    display: inline-flex;
+    margin-bottom: -55px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .menu {
-        gap: 4rem;
-        width: 1200px;
-    }
+  .menu {
+    gap: 4rem;
+    width: 1200px;
+  }
 
-    .nav-link {
-        font-size: 1.3rem;
-    }
+  .nav-link {
+    font-size: 1.3rem;
+  }
 }
 
-/* Skills Section */
+/* Quick-About Section */
 
-.skills {
-    background-color: #D8D8D4;
-    color: #334345;
+.quick-about {
+  background-color: #d8d8d4;
+  color: #334345;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: auto;
 }
 
-.title {
-    margin-top: 3rem;
-    text-align: center;
+.name {
+  font-size: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+  grid-column: 1;
+}
+
+.headshot {
+  grid-column: 1;
+  height: 38%;
+  border-radius: 10%;
+}
+.about {
+  grid-column: 1;
 }
