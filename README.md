@@ -1,2 +1,3 @@
-# portfolio
-# added and updated as work experience and skills evolve
+# Grayson Gales Portfolio
+
+# This is a static site portfolio. It does not require any additional downloads or commands
